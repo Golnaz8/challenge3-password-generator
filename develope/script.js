@@ -52,10 +52,10 @@ function passEntry(){
 
     var passwordEntry = {
         passGen: passGen,
-        includepassNum: passNum,
-        includepassSpecial: passSpecial,
-        includepassUpper: passUpper,
-        includepassLowe: passLower
+        passNum: passNum,
+        passSpecial: passSpecial,
+        passUpper: passUpper,
+        passLower: passLower
     };
 
     
@@ -71,18 +71,34 @@ function passEntry(){
 
 }
 
-passEntry();
-
-// password = "";
-// if (passNum && passSpecial && passUpper && passLower) {
-    
-
-
-//      for (var i = 0; i < passGen; i++) {
-//         var randomNumber = Math.floor(Math.random() * numChar.length);
-//         password = password.concat(randomNumber);
-//      }
-//      console.log(password);
-// }
+function generateRandom(array) {
+    var randomChar = Math.floor(Math.random() * array.length);
+    return array[randomChar];
+}
 
 
+function generatePassword() {
+    var userChoice = passEntry();
+    var characterIncluded = [];
+    var final = [];
+
+    if (userChoice.passNum){
+        characterIncluded = characterIncluded.concat(numChar);
+    }
+    if (userChoice.passSpecial){
+        characterIncluded = characterIncluded.concat(specialChar);
+    }
+    if (userChoice.passUpper){
+        characterIncluded = characterIncluded.concat(upperChar);
+    }
+    if (userChoice.passLower){
+        characterIncluded = characterIncluded.concat(lowerChar);
+    }
+
+    for(i=0; i<userChoice.passGen; i++){
+        var characters = generateRandom(characterIncluded);
+        final.push(characters);
+    }
+    return final;
+
+}
