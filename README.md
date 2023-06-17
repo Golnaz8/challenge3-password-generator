@@ -29,12 +29,11 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
-
-
+![image](https://github.com/Golnaz8/challenge3-password-generator/assets/133593128/add8c84b-8ff8-4076-bb1f-8b72b436b494)
 
 
 ## Git hub pages link:
-
+https://golnaz8.github.io/challenge3-password-generator/
 
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
