@@ -1,6 +1,6 @@
 ## Description
 
-In this Challenge requires I modified starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that I write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+In this Challenge I modified starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that I write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
 ## User Story
 
@@ -29,6 +29,8 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
+The Password Generator application displays a red button to "Generate Password".
+
 ![image](https://github.com/Golnaz8/challenge3-password-generator/assets/133593128/add8c84b-8ff8-4076-bb1f-8b72b436b494)
 
 
