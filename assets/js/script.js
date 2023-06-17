@@ -104,7 +104,9 @@ function generatePassword() {
         var index = Math.floor(Math.random()*characterIncluded.length);
         characterIncluded[index] = checkAllTypes[i];
     }
-    return final;
+
+    //change the final pass into string to remove `,` from password
+    return final.join('');
 }
 
 
