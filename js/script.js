@@ -77,7 +77,6 @@ function generatePassword() {
     //and also push one random character of each type to checkAllType variable to make sure we have character of all 
     //selected character types in our password.
     if (userChoice.passNum){
-        //concat this charactar type to characterIncluded array
         characterIncluded = characterIncluded.concat(numChar);
         //push one character of this type to checkAllType array
         checkAllTypes.push(generateRandom(numChar));
