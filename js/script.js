@@ -10,7 +10,7 @@ var lowerChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 
 //in this function we ask questions and return five answer(how long password and which type of character)
 function passEntry(){
-
+    //chenge the string user answer to number and save it
     var passGen = parseInt(window.prompt(`How many characters do you want in your password?`),10);
 
     //if the inpute is not a number, alert an do nothing
@@ -77,7 +77,9 @@ function generatePassword() {
     //and also push one random character of each type to checkAllType variable to make sure we have character of all 
     //selected character types in our password.
     if (userChoice.passNum){
+        //concat this charactar type to characterIncluded array
         characterIncluded = characterIncluded.concat(numChar);
+        //push one character of this type to checkAllType array
         checkAllTypes.push(generateRandom(numChar));
     }
     if (userChoice.passSpecial){
@@ -101,6 +103,7 @@ function generatePassword() {
     //in this for loop we insert a character of all selected character types to make sure our password contains at 
     //least one character of all chosen sets.
     for(i=0; i<checkAllTypes.length; i++){
+        //make random index of characterIncluded array, to change with checkAllType array members.
         var index = Math.floor(Math.random()*characterIncluded.length);
         characterIncluded[index] = checkAllTypes[i];
     }
